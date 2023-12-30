@@ -24,7 +24,7 @@ function divideTwoIfEven(n: number): Option<number> {
 
 // either implementation that we need
 
-type Either<E, T> => Left<E> | Rigth<T>;
+type Either<E, T> = Left<E> | Rigth<T>;
 
 interface Left<E> {
     readonly _tag: 'Left';
