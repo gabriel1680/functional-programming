@@ -36,12 +36,12 @@ interface Rigth<T> {
     readonly rigth: T;
 }
 
-const left = <E, A = never>(e: E) => Either<E, A> => ({
+const left = <E, A = never>(e: E): Either<E, A> => ({
     _tag: 'Left',
     left: e
 });
 
-const rigth = <A, E = never>(v: A) => Either<E, A> => ({
+const rigth = <A, E = never>(v: A): Either<E, A> => ({
     _tag: 'Rigth',
     rigth: v
 });
